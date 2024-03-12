@@ -11,7 +11,6 @@ using UnityEngine.UI;
 
 public class ManageUiMenu : MonoBehaviour
 {
-    public string PlayerName;
     public TMP_InputField Input;
     public TextMeshProUGUI BestScore;
 
@@ -23,7 +22,7 @@ public class ManageUiMenu : MonoBehaviour
 
     public void OnNameEnterd()
     {
-        MainManager.Name = Input.text;
+        PlayerData.instance.playerName = Input.text;
     }
 
     public void StartGame()

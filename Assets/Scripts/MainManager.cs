@@ -44,7 +44,7 @@ public class MainManager : MonoBehaviour
                 brick.onDestroyed.AddListener(AddPoint);
             }
         }
-        PlayerName.text = "Player: " + Name;
+        PlayerName.text = "Player: " + PlayerData.instance.playerName;
         LoadBestScore();
     }
 
